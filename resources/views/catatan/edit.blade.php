@@ -7,7 +7,7 @@
             <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                        <form action="{{ url('catatan',$catatan->id) }}" method="POST">
+                        <form action="{{ url('catatan/update',$catatan->id) }}" method="POST">
                             {{ csrf_field() }}
                             @method('PUT')
                             <div class="mb-3">

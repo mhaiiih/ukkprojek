@@ -39,8 +39,8 @@
                                 <td>{{ $item->lokasi }}</td>
                                 <td>{{ $item->suhu_tubuh }}</td>
                                 <td>
-                                    <a href="{{ url('/edit-catatan',$item->id) }}" class="btn btn-warning">Edit</a>
-                                    <a href="{{ url('/delete-catatan',$item->id) }}" class="btn btn-danger">Hapus</a>
+                                    <a href="{{ url('catatan/edit',$item->id) }}" class="btn btn-warning">Edit</a>
+                                    <a href="{{ url('catatan/delete',$item->id) }}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                             @endforeach
